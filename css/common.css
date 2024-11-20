@@ -1,0 +1,124 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.home a {
+	text-decoration:none;
+	color:#000;
+}
+
+.content {
+	margin-top: -15px;
+	background-color: #ebebeb;
+	height: 30em;	/* DELETE ONCE CONTENT HAS BEEN ADDED TO PAGES */
+}
+
+.list-inline {
+	text-decoration: none;
+	display:inline-block;
+}
+
+.nav-break {
+	width:100%;
+	height:5px;
+	background-color: #EB0172;
+}
+
+.horizontal-nav {
+	background-color: #fff;
+	font-family: 'Replica-Bold', Arial, sans-serif;
+	box-sizing: border-box;
+	display:flex;
+	justify-content: center;
+	alig-items: center;
+}
+
+.container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+	display:inline-block;
+}
+
+.horizontal-navigation {
+	margin-top: -15px;
+	background: none;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	margin-bottom: 0;	
+}
+
+.navbar {
+	padding-left: 0;
+	list-style: none;
+	color: #000;
+	font-size: 16px;
+	position:relative;
+}
+
+.navbar li {
+	display:inline-block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #000;
+	background-color: #F0F0F0;
+	padding: 10px 15px;
+}
+
+.navbar a.active {
+	background-color:#EB0172;
+	color:#FFF;
+}
+
+.navbar a:hover {
+	background-color: #A0A0A0;
+	transition: all 0.3s ease;
+}
+
+/* ============= LOCAL FOOTER ================= */
+
+footer {
+	width: 100%;
+}
+
+.local-foot {
+	background-color: #EB0172;
+	color: #000;
+}
+
+.local-foot a {
+	color:#000;
+}
+
+/* ============= GLOBAL FOOTER ================= */
+
+.global-foot a {
+	color: #fff;
+}
+
+.global-top-foot {
+	background-color:#002D72;
+	color: #fff;
+}
+
+.global-bot-foot {
+	background-color:#004C98;
+	color: #fff;
+}
