@@ -1,3 +1,30 @@
+.heading-wrapper{
+	align-content: center;
+}
+
+.site-heading {
+    color: #fff;
+    font-family: 'Replica-Bold', Arial, sans-serif;
+    padding: 18px 18px 18px 0;
+    font-size: 2.1em;
+	display: flex;
+}
+
+.site-heading-a {
+    color: #ffffff;
+    text-decoration: none;
+	font-size: 33px;
+	margin: auto;
+}
+
+.logoContainer {
+    top: 0;
+    bottom: 0;
+    content:"./branding/at-the-creative-school.svg" ;
+    margin: auto;
+	align-items: right;
+}
+
 body, html {
 	margin: 0;
 	padding: 0;
