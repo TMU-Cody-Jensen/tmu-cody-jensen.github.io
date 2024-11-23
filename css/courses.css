@@ -1,0 +1,178 @@
+/* Hero Image */
+.hero-image {
+    display: flex;
+    width: 100%;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    background-color: #5BC2F4;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 54px;
+    margin:0;
+    color: #000;
+}
+
+.banner p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Courses Section */
+.courses-section {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the section */
+}
+
+.courses-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0033a0;
+    text-align: center;
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: flexbox;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Course Card */
+.course-card {
+    width: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;    
+}
+
+.course-card h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #5BC2F4;
+}
+
+.course-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f0f4f8;
+    cursor: pointer;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #5BC2F4;
+}
+
+.toggle-btn:hover {
+    color: #001a70;
+}
+
+.card-content {
+    padding: 15px;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+    color: #333;
+}
+
+.card-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Graduation Pathways Section */
+.graduation-pathways {
+    margin: 40px auto; /* Center horizontally */
+    text-align: center;
+    max-width: 1200px; /* Constrain the maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.graduation-pathways p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Pathways Grid */
+.pathways-grid {
+    display: flex;
+    flex-direction: row; /* Align cards side by side */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Add space between cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Pathway Card */
+.pathway-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; /* Allow cards to adjust width */
+    max-width: 300px; /* Constrain card width */
+}
+.pathway-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #5BC2F4;
+    padding-bottom: 5px;
+}
+
+.pathway-card p, .pathway-card ul, .pathway-card h4 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.pathway-card hr {
+    border: none;
+    border-top: 2px solid #5BC2F4;
+    margin: 10px 0;
+}
+
+.pathway-card ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.pathway-card ul li {
+    margin-bottom: 5px;
+}

@@ -40,7 +40,8 @@ body, html {
 .content {
 	margin-top: -15px;
 	background-color: #ebebeb;
-	height: 30em;	/* DELETE ONCE CONTENT HAS BEEN ADDED TO PAGES */
+	height: auto;
+	overflow:visible;
 }
 
 .list-inline {
@@ -122,6 +123,7 @@ body, html {
 
 footer {
 	width: 100%;
+	position: relative;
 }
 
 .local-foot {
