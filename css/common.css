@@ -150,3 +150,25 @@ footer {
 	background-color:#004C98;
 	color: #fff;
 }
+
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    background-color: #5BC2F4;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 54px;
+    margin:0;
+    color: #000;
+}
+
+.banner p {
+    font-size: 16px;
+    margin: 0;
+}
