@@ -54,8 +54,21 @@
         </div>
 
         <!-- CONTENT -->
-        <div class="content container">
-            <h1> This is the Login Page</h1>
+        <div class="contentcontainer">
+            <img src="..\images\login\tmulogo.jpg"> <br>
+            <div class="input">
+            <input id="User" type="Text" placeholder="toronntomu username" name="Username"> <br>
+            <input id="Pass" type="password" placeholder="Password" name="Password"><br>
+            </div>
+            <p id="InCorrect" style="color: red;"></p> 
+            <p id="Correct" style="color: green;"></p> 
+            <button onclick="SignIn(document.getElementById('User').value, document.getElementById('Pass').value)">Log In</button>
+            <li onclick="solution()"><span class= "linkcolor">Forgot your password?</span></li>
+            <li onclick="solution()"><span class= "linkcolor">Can't log in?</span></li>
+            <p1>For technical issues, please contact the 
+                <a href="https://www.torontomu.ca/ccs/contact-it-help/"><span class= "linkcolor">CCS Help Desk.</span></a> </p1>
+            <img class="alert" src="..\images\login\icon-alert.png">
+            <p2>Before entering your torontomu username and password, verify that the URL for this page begins with <strong>"https://cas.torontomu.ca/"</strong>.</p2> 
         </div>
 
         <!-- FOOTER -->
@@ -94,4 +107,19 @@
             <p>&copy; 2024 Cody Jensen, Holly Bachman, Nazifa Alam, Sneesha Anandkumar, Victoria Nip, Momna Sheikh, Brittany Cole. This is a student project.</p>
         </div>
     </footer>
+    <script>
+        function SignIn (User, Pass){
+            if (User == "Username" && Pass == "Password"){
+                document.getElementById("Correct").innerHTML = "Login Successful.";
+                document.getElementById("InCorrect").innerHTML = "";
+        }
+        else{
+            document.getElementById("InCorrect").innerHTML = "Incorrect Username or Password.";
+            document.getElementById("Correct").innerHTML = "";
+        }
+        }
+        function solution (){
+            alert("User: Username and Pass: Password");
+        }
+    </script>
 </html>
