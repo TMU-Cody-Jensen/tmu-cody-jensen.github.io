@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const toggleButtons = document.querySelectorAll(".toggle-btn");
-    const cardHeaders = document.querySelectorAll(".mrp-dropdown");
+    const cardHeaders = document.querySelectorAll(".MRP-dropdown");
     const cards = document.querySelectorAll(".mrp-card");
 
     // Toggle individual cards
     cardHeaders.forEach((header) => {
         header.addEventListener("click", () => {
-            const card = header.closest(".MRP-dropdown");
+            const card = header.closest(".mrp-card");
             const content = card.querySelector(".MRP-text");
             const button = card.querySelector(".toggle-btn");
 

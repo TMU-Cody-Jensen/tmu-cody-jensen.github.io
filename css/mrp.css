@@ -19,10 +19,6 @@ h2{
 
 }
 
-.mrp-card{
-
-}
-
 .toggle-btn {
     background: none;
     border: none;
@@ -58,7 +54,7 @@ h2{
     margin: auto;
     justify-content: center;
     align-items: center;
-    padding: 15px
+    padding: 15px;
     display: none; /* Hidden by default */
 }
 
