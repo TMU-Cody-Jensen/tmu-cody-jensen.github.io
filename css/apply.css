@@ -1,0 +1,152 @@
+body{
+	width: 80%;
+	margin: auto;
+}
+
+
+/* Non-Academic Section */
+.nonacademic-section {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the section */
+}
+
+.nonacademic-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0033a0;
+    text-align: center;
+}
+
+/* Non-Academic Grid */
+.nonacademic-grid {
+    display: flexbox;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Requirements Card */
+.requirements-card {
+    width: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;    
+}
+
+.requirements-card h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #5BC2F4;
+}
+
+.requirements-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.requirements-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.requirements-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f0f4f8;
+    cursor: pointer;
+}
+
+.requirements-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #5BC2F4;
+}
+
+.toggle-btn:hover {
+    color: #001a70;
+}
+
+.requirements-content {
+    padding: 15px;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+    color: #333;
+}
+
+.requirements-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.application-dates {
+	margin: 20px auto;
+	display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; 
+    max-width: 900px;
+}
+
+.application-dates {table, th, td, p{
+		border: solid black;
+		border-collapse: collapse;
+		width: 100%;
+		table-layout: fixed;
+		margin: 10px;
+		padding: 6px;
+		font-size: 15px;
+		text-align: center;
+}
+}
+
+.academic{
+	margin: 20px auto;
+	display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; 
+    max-width: 600px;
+}
+
+.apply-card {
+	margin: 40px auto;
+	display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; 
+    max-width: 600px;
+}
+
+#submitButton {
+	background: #EB0172;
+	border: #EB0172;
+	border-radius: 8px;
+	padding: 14px;
+	margin-top: 14px;
+	color: white;
+	font-weight: bold;
+}
