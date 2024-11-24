@@ -5,7 +5,7 @@ h2{
 }
 
 
-#MRP-dropdown {
+.MRP-dropdown {
     display: block;
     font-family: 'Replica-Bold', Arial, sans-serif;    
     background-color:black;
@@ -15,28 +15,56 @@ h2{
     margin: auto;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+
 }
 
-#MRP-wrapper {
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.MRP-wrapper {
     display: flex;
 }
 
-#table-wrapper {
-    width:50%;
+.table-wrapper {
+    width:60%;
     margin: auto;
+    padding-left: 5%;
+    Padding-right: 5%;
     justify-content: center;
     align-items: center;
 }
 
-#MRP-text {
-    width:50%;
+.iframe-centre{
+    display: flex;
+    align-items: center;
+    margin: auto;    
+    justify-content: center;
+    margin: auto;
+}
+
+.MRP-text {
+    width:80%;
     margin: auto;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+    display: none; /* Hidden by default */
 }
 
 th {
     background-color: #3e7ba9;
+    padding: 10px; 
+    margin: 50px;
+}
+
+td {
     padding: 10px; 
     margin: 50px;
 }
