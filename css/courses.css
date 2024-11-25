@@ -155,3 +155,9 @@
 .pathway-card ul li {
     margin-bottom: 5px;
 }
+
+.wide-card {
+    margin-top: 20px;
+    width: 100%;
+    max-width:100%;
+}
