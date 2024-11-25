@@ -1,0 +1,107 @@
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font-family: 'Replica-Bold', Arial, sans-serif;
+    font-size: 25px;
+    /* Personalize */
+    width: 20rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: black;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    /* Remove IE arrow */
+    :-ms-expand {
+      display: none;
+    }
+
+    /* Remove focus outline */
+    :focus {
+      outline: none;
+    }
+    /* <option> colors */
+    option {
+      color: inherit;
+      background-color: var(--option-bg);
+    }
+  }
+
+.dropdown-select{
+    display: flex;
+    font-family: 'Replica-Bold', Arial, sans-serif;
+    padding: 15px;
+    padding-right: 5%;
+    align-items: right;
+    justify-content: right;
+    flex: 1;
+
+}
+
+input{
+    background-color: black;
+    color: #ececec;
+    margin: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#iam{
+    font-size: 30px;
+    margin: 12px;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.news-banner {
+    display: flex;
+    font-family: 'Replica-Bold', Arial, sans-serif;
+    font-size: 25px ;
+    color: black;
+    background-color: #5BC2F4;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.grey-bkg{
+    background-color: #ececec;
+    padding:15px;
+}
+
+.calendar-section{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-calendar{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.calendar-content{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+.calendar-card{
+   padding: 15px;
+   text-decoration: none;
+   font-family: 'Replica-Bold', Arial, sans-serif;
+   background-color: #ececec;
+   border-radius: 8px;
+   margin: 15px;
+}
