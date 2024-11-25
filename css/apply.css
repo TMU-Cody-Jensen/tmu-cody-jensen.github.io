@@ -35,6 +35,20 @@
     max-width: 600px;
 }
 
+#academicimg img{
+    float: right;
+    margin: 10px;
+}
+
+.internationalapplicants{
+    margin-left: 80px;
+    width: 45%;
+}
+
+.bodytext{
+    text-align: center;
+}
+
 .nonacademic-section {
     margin: 40px auto;
     display: flex;
@@ -123,6 +137,17 @@ form input[type="text"], form input[type="email"]{
     width: 100%;
     background: #EB0172;
     border: #EB0172;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#submitButton:hover {
+    width: 100%;
+    background: #d40166;
+    border: ##d40166;
     border-radius: 8px;
     padding: 14px;
     margin-top: 10px;
