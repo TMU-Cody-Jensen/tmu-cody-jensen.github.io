@@ -5,7 +5,7 @@ h1{
 
 h2{
     font-family: 'Replica-Bold', Arial, sans-serif;
-    color: white;
+   
     width: 90%;
 }
 
@@ -20,7 +20,7 @@ h4{
 }
 
 .header{
-    padding-left: 10%;
+    padding-left: 15%;
     margin: auto;
     justify-content: left;
     align-items: center;
@@ -39,6 +39,7 @@ h4{
 .MRP-dropdown {
     display: flex;
     font-family: 'Replica-Bold', Arial, sans-serif;    
+    color: white;
     background-color:black;
     padding: 10px 20px 10px 15px;
     height: fit-content;  

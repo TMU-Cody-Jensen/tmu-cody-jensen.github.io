@@ -31,4 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    //i want to add a mouse in and out but it is not working
+    function blueTextIn() { 
+        cardHeaders.style.color="#5BC2F4"; 
+        cardHeaders.style.backgroundColor="grey"
+    }
+    
+    function ogTextIn(){
+        cardHeaders.style.color="white"; 
+    }
+    
+    cardHeaders.addEventListener("mouseover", blueTextIn);
+    cardHeaders.addEventListener("mouseout", ogTextIn);
 });
+
