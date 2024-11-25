@@ -118,7 +118,7 @@ button{
   align-items: right; 
 }
 
-.calendar-studentsection{
+#calendar-studentsection{
   display: flex; 
   display: none; /*hidden by default*/
   justify-content: center;
@@ -126,7 +126,7 @@ button{
   
 }
 
-.calendar-applicantsection{
+#calendar-applicantsection{
   display: flex;
   display: none; /*hidden by default*/
   justify-content: center;

@@ -3,16 +3,19 @@
 
 
 function getCal() { 
-    var input = document.getElementById("iam").innerHTML = input.options.text; 
-    var studentCal = document.querySelector("calendar-studentsection");
-    var applicantCal = document.querySelector("calendar-applicantsection");
+    var input = document.getElementById("iam").innerHTML; 
+    var studentCal = document.getElementById("calendar-studentsection");
+    var applicantCal = document.getElementById("calendar-applicantsection");
     
+    var studentOption = document.getElementById("studentOption");
+    var applicantOption = document.getElementById("applicantOption");
 
-    if document.getElementById("studentoption").value = "student"{
-        studentCal.style.display="block"
+    if (studentOption.selected) {
+        studentCal.style.display = "block";
     }
-   if document.getElementById("applicantoption").selected{
-        applicantCal.style.display="block"
+
+    if (applicantOption.selected) {
+        applicantcal.style.display = "block";
     }
 
     

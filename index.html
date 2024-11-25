@@ -93,8 +93,8 @@
                 <p id="iam">I am a</p>
                 <select>
                     <option value="empty"> ... </option>
-                    <option value="student">Student</option>
-                    <option value="applicant">Applicant</option>
+                    <option id="studentOption" value="student">Student</option>
+                    <option id="applicantOption" value="applicant">Applicant</option>
                 </select>
                 <button id="go-button" onclick="getCal()" type="Button"> Go </button> 
            </div>
@@ -105,7 +105,7 @@
   
 
     <!-- student calendar -->
-    <div class="calendar-studentsection"> 
+    <div id="calendar-studentsection"> 
         <div class="news-banner">
             <h3> news & events </h3>
         </div>
@@ -143,7 +143,7 @@
     </div>    
 
     <!-- applicant calendar -->
-    <div class="calendar-applicantsection"> 
+    <div id="calendar-applicantsection"> 
         <div class="news-banner">
             <h3> news & events </h3>
         </div>
@@ -230,6 +230,8 @@
             <p>&copy; 2024 Cody Jensen, Holly Bachman, Nazifa Alam, Sneesha Anandkumar, Victoria Nip, Momna Sheikh, Brittany Cole. This is a student project.</p>
         </div>
     </footer>
+
+    <script src="./js/hover.js"></script>
+    <script src="./js/dropdown.js"></script>
 </html>
-<script src="./js/hover.js"></script>
-<script src="./js/dropdown.js"></script>
+
