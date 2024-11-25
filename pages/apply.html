@@ -117,15 +117,16 @@
             </section>
             <h3>In addition to the academic requirements, students will be asked to submit the following documents.</h3>
 
+    <!-- REQUIRED COURSES SECTION -->
             <section class="nonacademic-section">
                 <div class="nonacademic-grid">
                     <div class="requirements-card">
-                        <div class="requirements-header">
+                        <div class="card-header">
                             <h3>Portfolio</h3>
                             <button class="toggle-btn">+</button>
                         </div>
 
-                        <div class="requirements-content">
+                        <div class="card-content">
                             <p>Applicants must demonstrate that they have the necessary background to pursue intensive work in a production-oriented digital media program. A portfolio of your work will be required.</p>
                             <ul>
                                 <li>The portfolio should demonstrate your proficiency in your area of specialization or knowledge, whether your background is in business, creative or technical industries.</li>
@@ -136,38 +137,37 @@
                                 <li>Portfolio evaluation will be a critical component of the admissions process.</li>
                                 <li><strong>We do not provide portfolio examples to applicants.</strong></li>
                             </ul>
+                        </div>
                         
                     </div>
                     <div class="requirements-card">
-                        <div class="requirements-header">
+                        <div class="card-header">
                             <h3>Letters of Reccomendation</h3>
                             <button class="toggle-btn">+</button>
                         </div>
-
-                        <div class="requirements-content">
+                        <div class="card-content">
                             <p>Two academic <i>or</i> three professional reference letters <i>or</i> a combination of both are required.</p>
+                            <br>
                             <p>If you have been working within the industry for more than two years, all letters can be industry-related references. If you are providing industry related references, three letters will be required.  It is your responsibility to contact the referee before providing their contact information on the online application form to confirm their availability.</p>
                         </div>
                                                 
                     </div>
                     <div class="requirements-card">
-                        <div class="requirements-header">
+                        <div class="card-header">
                             <h3>Resume</h3>
                             <button class="toggle-btn">+</button>
                         </div>
-
-                        <div class="requirements-content">
+                        <div class="card-content">
                             <p>Other program-specific background information such as a resumé/CV and Statement of Interest must be submitted as part of your online application.</p>
                         </div>
                     </div>
 
                     <div class="requirements-card">
-                        <div class="requirements-header">
+                        <div class="card-header">
                             <h3>Statement of Interest</h3>
                             <button class="toggle-btn">+</button>
                         </div>
-
-                        <div class="requirements-content">
+                        <div class="card-content">
                             <p>The following are a few recommendations for the Statement of Interest:</p>
                             <ul>
                                 <li>Length: 2 pages</li>
@@ -178,7 +178,6 @@
                             <p><strong>Interviews may be required.</strong> We will contact applicants who require an interview.  In cases where distance is prohibitive, the interview may be facilitated by other means such as Zoom, Skype or teleconference.</p>
                         </div>
                     </div>
-                    
                 </div>
             </section>
 
@@ -223,27 +222,26 @@
             ////variable declarations (step 1)///
             var button1=document.getElementById("submitButton");
             var confirmationMessage=document.querySelector("#confirmMessage");
-
+            const requirementCards=document.querySelectorAll('.requirements-card');
 
             ////event listeners (step 3)///
             button1.addEventListener("click", submitApplication);
 
 
             ///////function defs (step 2)///////
-
             function submitApplication(event) {
              // Prevent form submission (page reload)
                  event.preventDefault();
 
-            var firstNameDisplay = document.forms["apply"]["fname"].value;
-            var lastNameDisplay = document.forms["apply"]["lname"].value;
-            var emailAddressDisplay = document.forms["apply"]["email"].value;
-            var startTermDisplay = document.forms["apply"]["term"].value;
-            var applicationFormDisplay = document.forms["apply"]["applicationForm"].value;
-            var portfolioDisplay = document.forms["apply"]["portfolio"].value;
-            var lettersDisplay = document.forms["apply"]["letters"].value;
-            var resumeDisplay = document.forms["apply"]["resume"].value;
-            var statementDisplay = document.forms["apply"]["statement"].value;
+                var firstNameDisplay = document.forms["apply"]["fname"].value;
+                var lastNameDisplay = document.forms["apply"]["lname"].value;
+                var emailAddressDisplay = document.forms["apply"]["email"].value;
+                var startTermDisplay = document.forms["apply"]["term"].value;
+                var applicationFormDisplay = document.forms["apply"]["applicationForm"].value;
+                var portfolioDisplay = document.forms["apply"]["portfolio"].value;
+                var lettersDisplay = document.forms["apply"]["letters"].value;
+                var resumeDisplay = document.forms["apply"]["resume"].value;
+                var statementDisplay = document.forms["apply"]["statement"].value;
 
 
                 if(firstNameDisplay.trim() === "" || lastNameDisplay.trim() === "" || emailAddressDisplay.trim() === "" || startTermDisplay === "select" || applicationFormDisplay === "" || portfolioDisplay === "" || lettersDisplay === "" || resumeDisplay === "" || statementDisplay === "") {
@@ -257,6 +255,22 @@
                     confirmationMessage.style.fontWeight="bold";
                 }
             }
+
+              requirementCards.forEach(card => {
+                  card.addEventListener('click', function () {
+                      const toggleButton = this.querySelector('.toggle-btn');
+                      const content = this.querySelector('.card-content');
+
+                      // Toggle content visibility
+                      if (content.style.display === "none" || content.style.display === "") {
+                          content.style.display = "block";
+                          toggleButton.textContent = "-";  // Change button to "-" when expanded
+                      } else {
+                          content.style.display = "none";
+                          toggleButton.textContent = "+";  // Change button to "+" when collapsed
+                      }
+                  });
+              });
 
         </script>
 

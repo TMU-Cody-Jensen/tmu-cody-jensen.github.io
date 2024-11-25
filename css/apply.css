@@ -1,27 +1,47 @@
 
-/* Non-Academic Section */
+.application-dates {
+    margin: 20px auto;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; 
+    max-width: 900px;
+}
+
+.application-dates {table, th, td, p{
+        border: solid black;
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+        margin: 10px;
+        padding: 6px;
+        font-size: 15px;
+        text-align: center;
+}
+}
+
+.academic{
+    margin: 20px auto;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%; 
+    max-width: 600px;
+}
+
 .nonacademic-section {
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Horizontally center the section */
+    align-items: center; 
 }
 
-.nonacademic-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #0033a0;
-    text-align: center;
-}
-
-/* Non-Academic Grid */
-.nonacademic-grid {
-    display: flexbox;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-/* Requirements Card */
 .requirements-card {
     width: 600px;
     background-color: white;
@@ -32,22 +52,11 @@
     transition: max-height 0.3s ease-out;    
 }
 
-.requirements-card h3 {
-    font-size: 18px;
-    margin: 0 0 10px;
-    color: #5BC2F4;
-}
-
-.requirements-card p {
-    font-size: 14px;
-    margin: 0;
-}
-
 .requirements-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.requirements-header {
+.card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +65,7 @@
     cursor: pointer;
 }
 
-.requirements-header h3 {
+.card-header h3 {
     margin: 0;
     font-size: 18px;
     color: #000;
@@ -75,58 +84,22 @@
     color: #001a70;
 }
 
-.requirements-content {
+.card-content {
     padding: 15px;
     font-size: 14px;
-    display: none; /* Hidden by default */
+    display: none; 
     color: #333;
 }
 
-.requirements-content p {
+.card-content p, li {
     margin: 0;
     line-height: 1.6;
-}
-
-
-.application-dates {
-	margin: 20px auto;
-	display: flex;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 100%; 
-    max-width: 900px;
-}
-
-.application-dates {table, th, td, p{
-		border: solid black;
-		border-collapse: collapse;
-		width: 100%;
-		table-layout: fixed;
-		margin: 10px;
-		padding: 6px;
-		font-size: 15px;
-		text-align: center;
-}
-}
-
-.academic{
-	margin: 20px auto;
-	display: flex;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 100%; 
-    max-width: 600px;
+    font-size: 15px;
 }
 
 .apply-card {
-	margin: 40px auto;
-	display: flex;
+    margin: 40px auto;
+    display: flex;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -136,12 +109,24 @@
     max-width: 600px;
 }
 
+#term {
+    cursor: pointer;
+}
+
+form input[type="text"], form input[type="email"]{
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
 #submitButton {
-	background: #EB0172;
-	border: #EB0172;
-	border-radius: 8px;
-	padding: 14px;
-	margin-top: 14px;
-	color: white;
-	font-weight: bold;
+    width: 100%;
+    background: #EB0172;
+    border: #EB0172;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
