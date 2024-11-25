@@ -1,6 +1,9 @@
 
 
 
+//on selected item, toggle cal, and call getCal
+//go button toggles div that is also hidden
+
 
 function getCal() { 
     var input = document.getElementById("iam").innerHTML; 
@@ -12,13 +15,13 @@ function getCal() {
 
     if (studentOption.selected) {
         studentCal.style.display = "block";
+        applicantCal.style.display = "none";
     }
 
     if (applicantOption.selected) {
-        applicantcal.style.display = "block";
-    }
-
-    
+        studentCal.style.display = "none";
+        applicantCal.style.display = "block";
+    }    
     
 }
 

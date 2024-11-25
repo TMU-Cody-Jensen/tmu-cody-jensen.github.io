@@ -118,6 +118,7 @@ button{
   align-items: right; 
 }
 
+
 #calendar-studentsection{
   display: flex; 
   display: none; /*hidden by default*/
@@ -134,8 +135,14 @@ button{
 
 }
 
+.content-section{
+  display:flex ;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .student-calendar{
-  display: flex;
   margin-top: 0px;
   margin-right: 25px;
   padding:25px;
@@ -144,11 +151,9 @@ button{
 }
 
 .applicant-calendar{
-  display: flex;
   margin-top: 0px;
   margin-right: 25px;
   padding:25px;
-  align-content: left;
 }
 
 .calendar-studentcontent{
