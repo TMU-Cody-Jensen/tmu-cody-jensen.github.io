@@ -1,5 +1,9 @@
-body{
-        background: #ebebeb;
+
+#topimg img{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+
 }
 
 .application-dates {
@@ -29,15 +33,50 @@ body{
 #mdmvideo iframe {
     float: right;
     margin: 10px;
+    margin-right: 100px;
     border: 10px solid white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    clear: both;
+    clear: none;
+}
+
+
+.links {
+    width: 100%;
+    background: #EB0172;
+    border: #EB0172;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
+
+}
+
+.links:hover {
+    width: 100%;
+    background: #d40166;
+    border: ##d40166;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.link-grid {
+    margin-left: 100px;
+    margin-right: 30px;
 }
 
 
 .academic{
-    margin: 20px auto;
+    margin-left: 100px;
     display: flex;
     background-color: white;
     padding: 20px;
@@ -50,13 +89,23 @@ body{
 
 #academicimg img{
     float: right;
-    margin: 10px;
+    margin-right: 100px;
     clear: both;
 }
 
 .internationalapplicants{
-    margin-left: 80px;
+    margin-left: 100px;
     width: 45%;
+}
+
+.pagetext{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.videotext{
+    margin-left: 100px;
+    margin-right: 150px;
 }
 
 .bodytext{
