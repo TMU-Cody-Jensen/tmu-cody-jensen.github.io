@@ -1,3 +1,8 @@
+/* Hero Image */
+.hero-image {
+    width: 100%;
+}
+
 /* General Layout */
 .content.container {
     display: flex; /* Use flexbox for horizontal alignment */
@@ -10,7 +15,7 @@
 .banner {
     flex: 2; /* Occupy more space in the row */
     text-align: center;
-    background-color: #f0f4f8; /* Optional background */
+    background-color: #5BC2F4;
     padding: 20px;
     border-radius: 8px;
     line-height:1.4;
@@ -132,26 +137,33 @@
     transition: transform 0.5s ease-in-out; /* Smooth sliding */
     gap: 0; /* No extra gap between items */
     width: 100%;
+    height:auto;
 }
 
 .carousel-item {
-    min-width: 100%; /* Each item takes the full container width */
+    width:100%; /* Each item takes the full container width */
+    height:100%;
     flex-shrink: 0; /* Prevent shrinking */
     text-align: center;
-    background-color: white;
+    background-color: #F5F5F5;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display:flex;
+    padding:20px;
 }
 
 .carousel-image {
     width: 100%; /* Full width for images */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+    margin-right:1000px;
 }
 
 .carousel-details {
+    width: 400px; 
     padding: 16px;
+    padding-right: 50px;
 }
 
 .carousel-btn {
@@ -178,4 +190,17 @@
 
 .carousel-btn:hover {
     background-color: #002080;
+}
+
+.profile-container {
+  display:flex;
+}
+
+.profile-img {
+  width: 80%;
+}
+
+.profile-img-small {
+  width: 50%;
+  padding:5px;
 }
