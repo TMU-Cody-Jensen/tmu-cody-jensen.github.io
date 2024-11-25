@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardHeaders = document.querySelectorAll(".card-header");
     const cards = document.querySelectorAll(".course-card");
 
+    const openAllButton = document.getElementById("open-all");
+    const closeAllButton = document.getElementById("close-all");
+
     // Toggle individual cards
     cardHeaders.forEach((header) => {
         header.addEventListener("click", () => {
@@ -10,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const content = card.querySelector(".card-content");
             const button = card.querySelector(".toggle-btn");
 
-            // Close all other cards
+            // Close all other cards - Disabled to allow for opening of individual cards
+            /*
             cards.forEach((otherCard) => {
                 const otherContent = otherCard.querySelector(".card-content");
                 const otherButton = otherCard.querySelector(".toggle-btn");
@@ -20,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     otherButton.textContent = "+"; // Reset button symbol
                 }
             });
+            */
 
             // Toggle the selected card
             if (content.style.display === "none" || content.style.display === "") {
@@ -31,4 +36,41 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    /*
+    function CloseAll() 
+    {        
+        cardHeaders.forEach((header) => {
+            const card = header.closest(".course-card");
+            const content = card.querySelector(".card-content");
+            const button = card.querySelector(".toggle-btn");
+
+            // Toggle the selected card
+            content.style.display = "block";
+            button.textContent = "−"; // Change button to minus
+        });        
+    }
+
+    function OpenAll() 
+    {        
+        cardHeaders.forEach((header) => {
+            const card = header.closest(".course-card");
+            const content = card.querySelector(".card-content");
+            const button = card.querySelector(".toggle-btn");
+
+            // Toggle the selected card
+            content.style.display = "none";
+            button.textContent = "+"; // Change button to plus
+        });        
+    }
+
+    openAllButton.addEventListener("click", () => {
+        OpenAll();
+    });
+
+    closeAllButton.addEventListener("click", () => {
+        CloseAll();
+    });
+    */
+    
 });

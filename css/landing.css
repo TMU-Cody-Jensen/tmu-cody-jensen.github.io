@@ -33,75 +33,150 @@ select {
   }
 
 .dropdown-select{
-    display: flex;
-    font-family: 'Replica-Bold', Arial, sans-serif;
-    padding: 15px;
-    padding-right: 5%;
-    align-items: right;
-    justify-content: right;
-    flex: 1;
+  display: flex;
+  width: 100%;
+  font-family: 'Replica-Bold', Arial, sans-serif;
+  padding: 20px;
+  padding-left: 20%;
+  padding-bottom: 7%;
+  justify-content: center;
 
 }
 
-input{
-    background-color: black;
-    color: #ececec;
-    margin: 10px;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
+button{
+  background-color: black;
+  font-weight: 800;
+  color: #ececec;
+  margin: 10px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
 }
 
 #iam{
-    font-size: 30px;
-    margin: 12px;
-    padding-left: 10px;
-    padding-right: 40px;
+  font-size: 30px;
+  margin: 12px;
+  padding-left: 10px;
+  padding-right: 40px;
 }
 
 .news-banner {
-    display: flex;
-    font-family: 'Replica-Bold', Arial, sans-serif;
-    font-size: 25px ;
-    color: black;
-    background-color: #5BC2F4;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    padding: 20px 40px;
-    border-radius: 8px;
+  display: flex;
+  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-size: 25px ;
+  color: black;
+  background-color: #ececec;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.title-banner {
+  
+  font-family: 'Replica-Bold', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 25px ;
+  color: black;
+  background-color: #5bc1f2;
+  padding:15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5%;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+#blue-bold-text{
+  font-family: 'Replica-Bold', Arial, sans-serif;
+  padding:30px;
+  font-weight: 800;
+  color: #004C9B;
+  width: 40%;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+}
+
+.blue-bkg{
+  background-color: #5bc1f2;
+  padding:15px;
 }
 
 .grey-bkg{
-    background-color: #ececec;
-    padding:15px;
+  background-color:#ececec;
 }
 
-.calendar-section{
-    display: flex;
-    margin: 5%;
-    justify-content: center;
-    align-items: center;
+.flex-centre{
+  display:flex;
+  padding:15px;
+  margin: auto;
+  justify-content: center;
+  align-items: right; 
+}
+
+
+#calendar-studentsection{
+  display: flex; 
+  display: none; /*hidden by default*/
+  justify-content: center;
+  margin: 15px;
+  
+}
+
+#calendar-applicantsection{
+  display: flex;
+  display: none; /*hidden by default*/
+  justify-content: center;
+  margin: 15px;
+
+}
+
+.content-section{
+  display:flex ;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .student-calendar{
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-top: 0px;
+  margin-right: 25px;
+  padding:25px;
+  align-content: left;
+
 }
 
-.calendar-content{
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-    padding: 15px;
+.applicant-calendar{
+  margin-top: 0px;
+  margin-right: 25px;
+  padding:25px;
+}
+
+.calendar-studentcontent{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+}
+.calendar-applicantcontent{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 
 }
 
 .calendar-card{
-   padding: 15px;
-   text-decoration: none;
-   font-family: 'Replica-Bold', Arial, sans-serif;
-   background-color: #ececec;
-   border-radius: 8px;
-   margin: 15px;
+  padding: 15px;
+  text-decoration: none;
+  font-family: 'Replica-Bold', Arial, sans-serif;
+  background-color: #ececec;
+  border-radius: 8px;
+  margin: 15px;
 }
+
+
+
