@@ -34,6 +34,7 @@
     float: right;
     margin: 10px;
     margin-right: 100px;
+    margin-bottom: 50px;
     border: 10px solid white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,7 +53,7 @@
     font-weight: bold;
     font-size: 14px;
     font-family: 'Replica-Bold', Arial, sans-serif;
-
+    margin-right: 15px;
 }
 
 .links:hover {
