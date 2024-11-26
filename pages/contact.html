@@ -58,40 +58,99 @@
 
         <!-- CONTENT -->
         <div class="contentcontainer">
-            <img src="..\images\contacts\get-in-touch.jpg">
+            <img class="top" src="..\images\contacts\get-in-touch.jpg">
             <h1>Program Office</h1>
-            <h2>Master of Digital Media Program Administrator</h2>
-            <p>Email: digitalmedia@torontomu.ca</p>
-            <h2>Talk to an Alumni</h2>
-            <p>Have some questions about the program? Feel free to direct message Robin Kang, MDM 7.0 Alumni, via LinkedIn!</p>
+            <div class="colorforbox">
+                <h2 class="info">Master of Digital Media Program Administrator</h2>
+                <p class="info">Email: digitalmedia@torontomu.ca</p>
+                <h2 class="info">Talk to an Alumni</h2>
+                <p class="info">Have some questions about the program? Feel free to direct message <a href="/content/ryerson/master-digital-media/the-mdm-network/2019-2020/kang-robin.html">Robin Kang</a>, MDM 7.0 Alumni, <a href="https://www.linkedin.com/in/robinkangdigitalmedia/" target="_blank">via LinkedIn<span aria-hidden="true" class="autoIconLink fa fa-external-link"></span></a></p>
+            </div>
             <h1>Social Media</h1>
-            <li><a href="https://twitter.com/DigitalMediaTMU"> <i class="fa fa-xing icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
-            <li><a href="https://www.instagram.com/digitalmediatmu/"> <i class="fa fa-instagram icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
-            <li><a href="https://www.linkedin.com/school/ryersonmdm/"> <i class="fa fa-linkedin icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
-            
+            <ul class="mainList">
+                <li class="partList"><a href="https://twitter.com/DigitalMediaTMU"> <i class="fa fa-xing icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
+                <li class="partList"><a href="https://www.instagram.com/digitalmediatmu/"> <i class="fa fa-instagram icon-circle alignment" title="instagram" style="color: white;"></i> </a> </li>
+                <li class="partList"><a href="https://www.linkedin.com/school/ryersonmdm/"> <i class="fa fa-linkedin icon-circle alignment" title="linkedin" style="color: white;"></i> </a> </li>
+            </ul>
+            <br>
+            <br>
+            <p class="pspecial"><strong>Contact Us!</strong></p>
+            <form id="Emailing" action="javascript:void(0);" onsubmit="submitEmail()">
+                <p>* indicates required</p>
+                <label for="EMAIL">Email Address *</label> <br>
+                <input id="EMAIL" type="email" name="EMAIL" required><br>
+                <label for="FNAME">First Name *</label><br>
+                <input id="FNAME" type="text" name="FNAME" required><br>
+                <label for="LNAME">Last Name *</label><br>
+                <input id="LNAME" type="text" name="LNAME" required><br>
+                <label for="WHO"> I am a(n)... *</label><br>
+                <select id="WHO" name="WHO" required>
+                    <option value=""></option>
+                    <option value="Alumni">Alumni</option>
+                    <option value="Prospective Student">Prospective Student</option>
+                    <option value="Industry Rep">Industry Rep</option>
+                    <option value="Digital Media Enthusiast">Digital Media Enthusiast</option>
+                    <option value="Staff/Faculty">Staff/Faculty</option>
+                    <option value="">Other</option>
+                </select><br>
+                <label for="Alumni">If you are an alumni, which cohort were you in?</label><br>
+                <select id="Alumni" name="Alumni">
+                    <option value=""></option>
+                    <option value="1.0 (2013-14 Cohort)">1.0 (2013-14 Cohort)</option>
+                    <option value="2.0 (2014-15 Cohort)">2.0 (2014-15 Cohort)</option>
+                    <option value="3.0 (2015-16 Cohort)">3.0 (2015-16 Cohort)</option>
+                    <option value="4.0 (2016-17 Cohort)">4.0 (2016-17 Cohort)</option>
+                    <option value="5.0 (2017-18 Cohort)">5.0 (2017-18 Cohort)</option>
+                    <option value="6.0 (2018-19 Cohort)">6.0 (2018-19 Cohort)</option>
+                    <option value="7.0 (2019-20 Cohort)">7.0 (2019-20 Cohort)</option>
+                    <option value="8.0 (2020-21 Cohort)">8.0 (2020-21 Cohort)</option>
+                    <option value="9.0 (2021-22 Cohort)">9.0 (2021-22 Cohort)</option>
+                    <option value="10.0 (2022 Cohort)">10.0 (2022 Cohort)</option>
+                    <option value="11.0 (2022-23 Cohort)">11.0 (2022-23 Cohort)</option>
+                    <option value="12.0 (2023 Cohort)">12.0 (2023 Cohort)</option>
+                    <option value="13.0 (2023-24 Cohort)">13.0 (2023-24 Cohort)</option>
+                    <option value="14.0 (2024 Cohort)">14.0 (2024 Cohort)</option>
+                    <option value="15.0 (2024-25 Cohort)">15.0 (2024-25 Cohort)</option>
+                </select><br>
+                <label for="Message">Message *</label><br>
+                <input class="inputMessage" id="Message" type="text" name="Message" required><br>
+                <input class="formButton" onsubmit="submitEmail()" type="submit" value="Submit">
+            </form>
+
             <h1>MDM Staff</h1>
-            <img src="..\images\contacts\LorenaEscandon.jpg">
-            <h2>Lorena Escandon</h2>
-            <button onclick="MoreInfo(document.getElementById('discriptionLorena'), 1, this)">More Info</button>
-            <p id = 'discriptionLorena' ></p>
-            <p>Graduate Program Director</p>
+            <div class="thumbnail">
+                <img class="images" src="..\images\contacts\LorenaEscandon.jpg">
+                <div class="format">
+                <h2>Lorena Escandon</h2>
+                <p>Graduate Program Director</p>
+                <button class="buttonInfo" onclick="MoreInfo(document.getElementById('discriptionLorena'), 1, this)">More Info</button>
+                <p id = 'discriptionLorena' ></p>
+                </div>
+            </div>
 
-            <img src="..\images\contacts\NamirAhmed.jpg">
-            <h2>Namir Ahmed</h2>
-            <button onclick="MoreInfo(document.getElementById('discriptionNamir'), 2, this)">More Info</button>
-            <p id = 'discriptionNamir' ></p>
-            <p>Manager, Master of Digital Media</p>
+            <div class="thumbnail">
+                <img class="images" src="..\images\contacts\NamirAhmed.jpg">
+                <div class="format">
+                <h2>Namir Ahmed</h2>
+                <p>Manager, Master of Digital Media</p>
+                <button class="buttonInfo" onclick="MoreInfo(document.getElementById('discriptionNamir'), 2, this)">More Info</button>
+                <p id = 'discriptionNamir' ></p>
+                </div>
+            </div>
 
-            <img src="..\images\contacts\hallemily.jpg">
-            <h2>Emily Hall</h2>
-            <button onclick="MoreInfo(document.getElementById('discriptionEmily'), 3, this)">More Info</button>
-            <p id = 'discriptionEmily' ></p>
-            <p>Graduate Program Administrator</p>
-
-            <img src="..\images\contacts\stay-in-loop.jpg">
-            <p><strong>Join our mailing list for updates about the program!</strong></p>
-            <p>* indicates required</p>
+            <div class="thumbnail">
+                <img class="images" src="..\images\contacts\hallemily.jpg">
+                <div class="format">
+                <h2>Emily Hall</h2>
+                <p>Graduate Program Administrator</p>
+                <button class="buttonInfo" onclick="MoreInfo(document.getElementById('discriptionEmily'), 3, this)">More Info</button>
+                <p id = 'discriptionEmily' ></p>
+                </div>
+            </div>
+            <img class="bottom" src="..\images\contacts\stay-in-loop.jpg">
+            <p  class="pspecial"><strong>Join our mailing list for updates about the program!</strong></p>
             <form id="form" action="javascript:void(0);" onsubmit="submitForm()">
+            <p>* indicates required</p>
             <label for="EMAIL">Email Address *</label> <br>
             <input id="EMAIL" type="email" name="EMAIL" required><br>
             <label for="FNAME">First Name *</label><br>
@@ -130,7 +189,8 @@
             <input id="CurrentJobTitle" type="text" name="CurrentJobTitle"><br>
             <label for="CompanyName">Company Name</label><br>
             <input id="CompanyName" type="text" name="CompanyName"><br>
-            <input onsubmit="submitForm()" type="submit" value="Subscribe">
+            <input class="formButton" onsubmit="submitForm()" type="submit" value="Subscribe">
+            </form>
         </div>
 
         <!-- FOOTER -->
@@ -206,6 +266,9 @@
     }
     function submitForm() {
         alert("Thank you for subscribing to mailing list!");
+    }
+    function submitEmail() {
+        alert("Submitted!");
     }
     </script>
 </html>
