@@ -16,6 +16,7 @@
     text-align: left;
     width: 100%; 
     max-width: 900px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .application-dates {table, th, td, p{
@@ -27,6 +28,7 @@
         padding: 6px;
         font-size: 15px;
         text-align: center;
+        font-family: 'Replica-Bold', Arial, sans-serif;
 }
 }
 
@@ -86,6 +88,7 @@
     text-align: left;
     width: 100%; 
     max-width: 600px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 #academicimg img{
@@ -97,20 +100,24 @@
 .internationalapplicants{
     margin-left: 100px;
     width: 45%;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .pagetext{
     margin-left: 100px;
     margin-right: 100px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .videotext{
     margin-left: 100px;
     margin-right: 150px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .bodytext{
     text-align: center;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .nonacademic-section {
@@ -118,6 +125,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .requirements-card {
@@ -127,7 +135,8 @@
     border-radius: 8px;
     margin-bottom: 10px;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;    
+    transition: max-height 0.3s ease-out;
+    font-family: 'Replica-Bold', Arial, sans-serif;    
 }
 
 .requirements-card:hover {
@@ -141,12 +150,14 @@
     padding: 15px;
     background-color: #f0f4f8;
     cursor: pointer;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .card-header h3 {
     margin: 0;
     font-size: 18px;
     color: #000;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .toggle-btn {
@@ -156,10 +167,12 @@
     font-weight: bold;
     cursor: pointer;
     color: #5BC2F4;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .toggle-btn:hover {
     color: #001a70;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .card-content {
@@ -167,12 +180,14 @@
     font-size: 14px;
     display: none; 
     color: #333;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .card-content p, li {
     margin: 0;
     line-height: 1.6;
     font-size: 15px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 .apply-card {
@@ -185,6 +200,7 @@
     text-align: left;
     width: 100%; 
     max-width: 600px;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 #term {
@@ -206,6 +222,7 @@ form input[type="text"], form input[type="email"]{
     margin-top: 10px;
     color: white;
     font-weight: bold;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
 
 #submitButton:hover {
@@ -218,4 +235,5 @@ form input[type="text"], form input[type="email"]{
     color: white;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'Replica-Bold', Arial, sans-serif;
 }
