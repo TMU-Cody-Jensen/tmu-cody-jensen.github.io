@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <head>
         <meta charset="UTF-8">
         <title>Contact Page</title>
@@ -54,8 +57,80 @@
         </div>
 
         <!-- CONTENT -->
-        <div class="content container">
-            <h1> This is the Contact Page</h1>
+        <div class="contentcontainer">
+            <img src="..\images\contacts\get-in-touch.jpg">
+            <h1>Program Office</h1>
+            <h2>Master of Digital Media Program Administrator</h2>
+            <p>Email: digitalmedia@torontomu.ca</p>
+            <h2>Talk to an Alumni</h2>
+            <p>Have some questions about the program? Feel free to direct message Robin Kang, MDM 7.0 Alumni, via LinkedIn!</p>
+            <h1>Social Media</h1>
+            <li><a href="https://twitter.com/DigitalMediaTMU"> <i class="fa fa-xing icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
+            <li><a href="https://www.instagram.com/digitalmediatmu/"> <i class="fa fa-instagram icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
+            <li><a href="https://www.linkedin.com/school/ryersonmdm/"> <i class="fa fa-linkedin icon-circle alignment" title="twitter" style="color: white;"></i> </a> </li>
+            
+            <h1>MDM Staff</h1>
+            <img src="..\images\contacts\LorenaEscandon.jpg">
+            <h2>Lorena Escandon</h2>
+            <button onclick="MoreInfo(document.getElementById('discriptionLorena'), 1, this)">More Info</button>
+            <p id = 'discriptionLorena' ></p>
+            <p>Graduate Program Director</p>
+
+            <img src="..\images\contacts\NamirAhmed.jpg">
+            <h2>Namir Ahmed</h2>
+            <button onclick="MoreInfo(document.getElementById('discriptionNamir'), 2, this)">More Info</button>
+            <p id = 'discriptionNamir' ></p>
+            <p>Manager, Master of Digital Media</p>
+
+            <img src="..\images\contacts\hallemily.jpg">
+            <h2>Emily Hall</h2>
+            <button onclick="MoreInfo(document.getElementById('discriptionEmily'), 3, this)">More Info</button>
+            <p id = 'discriptionEmily' ></p>
+            <p>Graduate Program Administrator</p>
+
+            <img src="..\images\contacts\stay-in-loop.jpg">
+            <p><strong>Join our mailing list for updates about the program!</strong></p>
+            <p>* indicates required</p>
+            <form id="form" action="javascript:void(0);" onsubmit="submitForm()">
+            <label for="EMAIL">Email Address *</label> <br>
+            <input id="EMAIL" type="email" name="EMAIL" required><br>
+            <label for="FNAME">First Name *</label><br>
+            <input id="FNAME" type="text" name="FNAME" required><br>
+            <label for="LNAME">Last Name *</label><br>
+            <input id="LNAME" type="text" name="LNAME" required><br>
+            <label for="WHO"> I am a(n)... *</label><br>
+            <select id="WHO" name="WHO" required>
+                <option value=""></option>
+                <option value="Alumni">Alumni</option>
+                <option value="Prospective Student">Prospective Student</option>
+                <option value="Industry Rep">Industry Rep</option>
+                <option value="Digital Media Enthusiast">Digital Media Enthusiast</option>
+                <option value="Staff/Faculty">Staff/Faculty</option>
+            </select><br>
+            <label for="Alumni">If you are an alumni, which cohort were you in?</label><br>
+            <select id="Alumni" name="Alumni">
+                <option value=""></option>
+                <option value="1.0 (2013-14 Cohort)">1.0 (2013-14 Cohort)</option>
+                <option value="2.0 (2014-15 Cohort)">2.0 (2014-15 Cohort)</option>
+                <option value="3.0 (2015-16 Cohort)">3.0 (2015-16 Cohort)</option>
+                <option value="4.0 (2016-17 Cohort)">4.0 (2016-17 Cohort)</option>
+                <option value="5.0 (2017-18 Cohort)">5.0 (2017-18 Cohort)</option>
+                <option value="6.0 (2018-19 Cohort)">6.0 (2018-19 Cohort)</option>
+                <option value="7.0 (2019-20 Cohort)">7.0 (2019-20 Cohort)</option>
+                <option value="8.0 (2020-21 Cohort)">8.0 (2020-21 Cohort)</option>
+                <option value="9.0 (2021-22 Cohort)">9.0 (2021-22 Cohort)</option>
+                <option value="10.0 (2022 Cohort)">10.0 (2022 Cohort)</option>
+                <option value="11.0 (2022-23 Cohort)">11.0 (2022-23 Cohort)</option>
+                <option value="12.0 (2023 Cohort)">12.0 (2023 Cohort)</option>
+                <option value="13.0 (2023-24 Cohort)">13.0 (2023-24 Cohort)</option>
+                <option value="14.0 (2024 Cohort)">14.0 (2024 Cohort)</option>
+                <option value="15.0 (2024-25 Cohort)">15.0 (2024-25 Cohort)</option>
+            </select><br>
+            <label for="CurrentJobTitle">Current Job Title</label><br>
+            <input id="CurrentJobTitle" type="text" name="CurrentJobTitle"><br>
+            <label for="CompanyName">Company Name</label><br>
+            <input id="CompanyName" type="text" name="CompanyName"><br>
+            <input onsubmit="submitForm()" type="submit" value="Subscribe">
         </div>
 
         <!-- FOOTER -->
@@ -94,4 +169,43 @@
             <p>&copy; 2024 Cody Jensen, Holly Bachman, Nazifa Alam, Sneesha Anandkumar, Victoria Nip, Momna Sheikh, Brittany Cole. This is a student project.</p>
         </div>
     </footer>
+    <script>
+
+      function MoreInfo(discriptionText, discription, Button) {
+        if (discription == 1) {
+            if (discriptionText.innerHTML == "") {
+                Button.innerHTML = "Hide Info";
+                discriptionText.innerHTML = "Dr. Escandón is an intrapreneur, professor, creative facilitator, speaker, and consultant on innovation, creativity, and new product development.She studied Information Technology at the University of Monterrey in Mexico, earned a master's degree in Entrepreneurship at the University of Lund in Sweden, and a Ph.D. in Innovation Management at the École de Technologie Supérieure in Montreal, Canada. Her research interests include innovation, creativity, technology, and entrepreneurship. She is trying to get people to work together and use technology to create new ideas and bring them to the market.As an intrapreneur, she has developed or co-developed and launched several programs. At Ryerson, she is the program coordinator of the Toy invention course series, and coordinator of the Toronto portion of the MOISAC Summer School on Management of Creativity. Earlier, at ÉTS she was co-responsible and co-instructor of: the International Summer School of Innovation and Technological design, and Innovation et entrepreneuriat : Entreprendre sans idée, and collaborated in the organization of a global innovation competition calledLes 24 heures de l’innovation from 2013 to 2017. While she launched a start-up in Monterrey, Mexico, she taught Entrepreneurship, Innovation and Creativity courses at Universidad Regiomontana for five years, where she obtained a Teacher of Excellence award.";
+            }
+            else{
+                Button.innerHTML = "More Info";
+                discriptionText.innerHTML = "";
+            }
+
+        }
+        else if (discription == 2) {
+            if (discriptionText.innerHTML == "") {
+                Button.innerHTML = "Hide Info";
+                discriptionText.innerHTML = "Namir Ahmed is an educator, researcher and Digital Media artist with over 10 years of experience in pre-production and visualization in film and television. His research leverages new and innovative methods of preserving and disseminating cultural heritage through education and engagement. His current focus is best practices for implementing XR technologies in the humanities.Over the past 8 years, Namir was the lead for TMU Library’s Digital Media Experience Lab, an experiential learning space focused on digital literacy. There he worked closely with TMU faculty, students and staff to support digital media in curriculum, research and entrepreneurship. Implementing innovative programmings such as the “Emerging Technology” speaker series and the “Creators Grant”.Namir holds a Master of Information Science from the University of Toronto, a post-grad diploma from Seneca College in Digital Technical Production, and an Honours BA from York University in Anthropology.";
+            }
+            else{
+                Button.innerHTML = "More Info";
+                discriptionText.innerHTML = "";
+            }
+        }
+        else if (discription == 3) {
+            if (discriptionText.innerHTML == "") {
+                Button.innerHTML = "Hide Info";
+                discriptionText.innerHTML = "Emily is a programs specialist and project manager with more than four years of working across various digital media industries. Within her most recent role at The DMZ, Emily developed highly specialized programs for budding tech entrepreneurs looking to make waves within their local and global communities. Emily holds a BA in photography from Sheridan College, a Masters in Digital Media from Toronto Metropolitan University and a Fashion and Business Management certificate from The New School at Parsons. Emiy's research in human resources and education management began during her time in the MDM program, where she developed a virtual reality training simulation. Outside of her research, Emily is an avid traveller and reader. She operates a freelance photography, video and graphic design business outside of her regular work. Her areas of interest for research are within education and interaction design, specifically within museum studies.";
+            }
+            else{
+                Button.innerHTML = "More Info";
+                discriptionText.innerHTML = "";
+            }
+        } 
+    }
+    function submitForm() {
+        alert("Thank you for subscribing to mailing list!");
+    }
+    </script>
 </html>
