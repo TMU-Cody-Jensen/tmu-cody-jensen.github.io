@@ -25,24 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (content.style.display === "none" || content.style.display === "") {
                 content.style.display = "block";
                 button.textContent = "−"; // Change button to minus
+                button.style.color = "#3e7ba9" // Change button colour to blue
+
+                
             } else {
                 content.style.display = "none";
                 button.textContent = "+"; // Change button to plus
+                button.style.color = "white" // Change button colour back to white
+
             }
         });
     });
-
-    //i want to add a mouse in and out but it is not working
-    function blueTextIn() { 
-        cardHeaders.style.color="#5BC2F4"; 
-        cardHeaders.style.backgroundColor="grey"
-    }
-    
-    function ogTextIn(){
-        cardHeaders.style.color="white"; 
-    }
-    
-    cardHeaders.addEventListener("mouseover", blueTextIn);
-    cardHeaders.addEventListener("mouseout", ogTextIn);
 });
 

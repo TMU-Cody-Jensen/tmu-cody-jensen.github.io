@@ -132,7 +132,7 @@ button{
   justify-content: right;
 }
 
-
+/*sections to help define js*/
 #calendar-studentsection{
   display: flex; 
   display: none; /*hidden by default*/
@@ -156,6 +156,7 @@ button{
   justify-content: center;
 }
 
+/*content divs*/
 .student-calendar{
   margin-top: 0px;
   margin-right: 25px;
@@ -170,12 +171,14 @@ button{
   padding:25px;
 }
 
+/*content divs*/
 .calendar-studentcontent{
   display: flex;
   flex-direction: column;
   padding: 15px;
 
 }
+
 .calendar-applicantcontent{
   display: flex;
   flex-direction: column;
@@ -183,7 +186,8 @@ button{
 
 }
 
-.calendar-card{
+/*used in all info card*/
+.calendar-card{ 
   padding: 15px;
   text-decoration: none;
   font-family: 'Replica-Bold', Arial, sans-serif;
