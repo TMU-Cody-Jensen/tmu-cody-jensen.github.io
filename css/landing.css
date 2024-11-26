@@ -36,10 +36,10 @@ select {
   display: flex;
   width: 100%;
   font-family: 'Replica-Bold', Arial, sans-serif;
-  padding: 20px;
-  padding-left: 20%;
-  padding-bottom: 7%;
   justify-content: center;
+  padding-top:2%;
+  padding-bottom:2%;
+  background-color:#ececec;
 
 }
 
@@ -92,10 +92,9 @@ button{
 
 #blue-bold-text{
   font-family: 'Replica-Bold', Arial, sans-serif;
-  padding:30px;
+  padding:5px;
   font-weight: 800;
   color: #004C9B;
-  width: 40%;
   justify-content:center;
   align-items: center;
   margin: auto;
@@ -108,14 +107,29 @@ button{
 
 .grey-bkg{
   background-color:#ececec;
+  display: flex;
+  justify-content: center;
 }
 
-.flex-centre{
-  display:flex;
-  padding:15px;
-  margin: auto;
+.grey-bkg-two{
+  background-color:#ececec;
+  display:flex
+
+}
+
+.img{
+  display: flex;
   justify-content: center;
-  align-items: right; 
+  align-items: center;
+  width: 50px;
+  margin: auto;
+}
+
+.flex-column{
+  display:flex;
+  margin: auto;
+  align-items: center;
+  justify-content: right;
 }
 
 
